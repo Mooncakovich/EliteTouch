@@ -83,6 +83,11 @@ a:hover {
   transform: translate(-50%, -50%);
   height: 100vh;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
   background-position: 50% 50%;
 }
 
@@ -213,11 +218,13 @@ a:hover {
   @media (width>1000px) {
     display: inline-block;
     width: 30%;
+    vertical-align: top;
   }
 
   @media (width<1000px) {
     display: block;
     width: 100%;
+    vertical-align: top;
   }
 
   text-align: left;
@@ -229,13 +236,13 @@ a:hover {
 .vl {
   @media (width>1000px) {
     display: inline-block;
+    margin-top: 7%;
   }
 
   @media (width<1000px) {
     display: none;
   }
 
-  margin: 0;
   padding: 0;
   border-left: 1px solid #394871;
   height: 200px;
@@ -507,8 +514,8 @@ a:hover {
 
 .carousel img {
   object-fit: cover;
-  max-width: 500px;
-  max-height: 700px;
+  width: 360px;
+  height: 540px;
   border-radius: 25px;
   margin-top: 5%;
 }
